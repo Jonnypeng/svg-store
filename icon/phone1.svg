@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 512 512" xml:space="preserve">
+<script type="application/ecmascript" xlink:href="//cdn.bootcss.com/snap.svg/0.4.1/snap.svg-min.js"></script>		
+<script type="application/ecmascript">
+var svg = Snap("#svg");
+start();
+function start(){
+svg.selectAll("path").remove();
+svg.selectAll("circle").remove();
+var phone = svg.paper.path("M 349.998 411.754 c -24.59 -24.589 -50.926 -45.288 -50.926 -45.288 L 260.7 404.838 L 107.162 251.3 l 38.372 -38.373 c 0 0 -20.698 -26.336 -45.288 -50.926 c -24.59 -24.589 -50.926 -45.288 -50.926 -45.288 S 3.343 159.01 0.25 192.558 c -4.137 44.904 43.395 126.545 118.021 201.172 c 74.626 74.625 156.267 122.157 201.171 118.021 c 33.547 -3.094 75.845 -49.071 75.845 -49.071 S 374.588 436.342 349.998 411.754 Z").attr({
+								"fill":"#1B4145",
+								"transform":"scale(0)"
+								});
+
+var mes = svg.paper.path("M 512 129.029 C 512 57.77 439.257 0 349.533 0 c -89.731 0 -162.467 57.77 -162.467 129.029 c 0 63.663 58.056 116.554 134.419 127.108 h -0.231 c 4.007 24.614 -3.386 50.749 -22.191 69.733 c 40.349 0 73.657 -30.389 78.716 -69.729 h -0.231 C 453.921 245.596 512 192.701 512 129.029 Z").attr({
+								"fill":"#FFD24D",
+								"transform":"scale(0)"
+								}); 
+
+
+var point1 = svg.paper.circle(292.261,129.024,11.378).attr({
+								"fill":"#F14742",
+								"fill-opacity":0
+								});
+
+var point2 = point1.clone().attr({
+cx: 349.536,
+cy: 129.024
+})
+
+var point3 = point1.clone().attr({
+cx: 406.801,
+cy: 129.024
+})
+
+setTimeout(phoneAni,500);
+function phoneAni(){
+				phone.animate({
+												"transform":"scale(1)"
+												},500,mina.bounce,mesAni);	
+};
+
+function mesAni(){
+				mes.animate({
+												"transform":"scale(1)"
+												},500,mina.bounce,pointAni);	
+};
+
+function pointAni(){
+				point1.animate({
+												"fill-opacity":1
+												},1000,mina.bounce,function (){
+												point2.animate({
+																"fill-opacity":1
+																},1000,mina.bounce,function (){
+																point3.animate({
+																				"fill-opacity":1
+																				},1000,mina.bounce,function (){
+																				})	
+																})	
+												})		
+}
+};
+setInterval(start,5000);
+</script>
+</svg>
