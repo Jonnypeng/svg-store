@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<title></title>
+<style>
+body{
+				margin:0px;
+}
+#btnShare{
+				position:fixed;
+				left:-webkit-calc((100% - 300px) / 2);
+				bottom:5px;
+}
+
+.scaleMin{
+				-webkit-transition:transform 3s;
+	-webkit-transform:scale(0.5);
+	-webkit-transform-origin:center center;
+}
+.Left{
+				-webkit-transition:transform 3s;
+	-webkit-transform:translateX(-150%);
+	-webkit-transform-origin:center center;
+}
+.Right{
+				-webkit-transition:transform 3s;
+	-webkit-transform:translateX(150%);
+	-webkit-transform-origin:center center;
+}
+.Up{
+				-webkit-transition:transform 3s;
+	-webkit-transform:translateY(-150%);
+	-webkit-transform-origin:center center;
+}
+.Down{
+				-webkit-transition:transform 3s;
+	-webkit-transform:translateY(150%);
+	-webkit-transform-origin:center center;
+}
+.center{
+				-webkit-transition:transform 3s;
+	-webkit-transform:translateX(0%);
+	-webkit-transform-origin:center center;
+}
+.mid{
+				-webkit-transition:transform 3s;
+	-webkit-transform:translateY(0%);
+	-webkit-transform-origin:center center;
+}
+.scaleMax{
+				-webkit-transition:transform 3s;
+	-webkit-transform:scale(1);
+	-webkit-transform-origin:center center;
+}
+</style>
+</head>
+<body>
+<svg id="btnShare" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+				<ellipse ry="30" rx="30" id="svg_2" cy="150" cx="150" stroke-width="0" stroke="#000" fill="#ff5656" class="fa fa-home">
+				</ellipse>
+				<ellipse ry="30" rx="30" id="svg_3" cy="150" cx="150" stroke-width="0" stroke="#000" fill="#ff5656">
+				</ellipse>
+				<ellipse ry="30" rx="30" id="svg_4" cy="150" cx="150" stroke-width="0" stroke="#000" fill="#ff5656">
+				</ellipse>
+				<ellipse ry="30" rx="30" id="svg_5" cy="150" cx="150" stroke-width="0" stroke="#000" fill="#ff5656">
+				</ellipse>
+				<g id="svg_1" fill="red">
+				        <ellipse ry="40" rx="40" cy="150" cx="150" stroke-width="0" stroke="#000"></ellipse>
+								 <line fill="none" stroke="#ffffff" fill-opacity="null" x1="130.5" y1="151" x2="169.5" y2="151" id="svg_7" stroke-linejoin="null" stroke-linecap="null" stroke-width="5"/>
+								   <line id="line1" fill="none" stroke="#ffffff" fill-opacity="null" x1="149.75" y1="131" x2="150.25" y2="171" id="svg_6" stroke-linejoin="null" stroke-linecap="null" stroke-width="5"/>
+				</g>
+</svg>
+<!--<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.slim.min.js"></script>-->
+				<script>
+					var btn1 = document.getElementById("svg_1");
+					var c1 = document.getElementById("c1");
+					var c2 = document.getElementById("c2");
+					var $ = function (idname){
+						return document.getElementById(idname);
+					};
+					var onOff = true;
+					btn1.addEventListener("click",fn,false);
+					
+					function fn(){
+							if(onOff){
+							$("line1").setAttribute("stroke","transparent");
+							this.setAttribute("class","scaleMin");
+							this.setAttribute("fill","#ff5656");
+							$("svg_2").setAttribute("class","Left");
+							$("svg_3").setAttribute("class","Right");
+							$("svg_4").setAttribute("class","Up");
+							$("svg_5").setAttribute("class","Down");
+							onOff = false;
+							}else{
+							$("line1").setAttribute("stroke","white");
+							this.setAttribute("class","scaleMax");	
+							this.setAttribute("fill","red");	
+							$("svg_2").setAttribute("class","center");
+							$("svg_3").setAttribute("class","center");
+							$("svg_4").setAttribute("class","mid");
+							$("svg_5").setAttribute("class","mid");
+							onOff = true;
+							}
+					};
+				</script>
+</body>
+</html>		

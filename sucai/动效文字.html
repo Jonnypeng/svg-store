@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title></title>
+	<style>
+		.letters {
+  position: relative;
+  display: block;
+  min-height: 400px;
+  max-height: 70vh;
+  margin: 0 auto;
+}
+ 
+ 
+/* Letter path */
+ 
+.letter__layer {
+  fill: none;
+  stroke-miterlimit: 3;
+  stroke-linecap: butt;
+  stroke-linejoin: bevel;
+}
+ 
+/* Styles for effect 1 */
+ 
+.letters--effect-1 .letter__layer:first-child {
+  stroke-width: 9px;
+}
+ 
+.letters--effect-1 .letter__layer:nth-child(2) {
+  stroke-width: 9.5px;
+}
+ 
+.letters--effect-1 .letter__layer:nth-child(3) {
+  stroke-width: 10px;
+}
+ 
+ 
+/* Effect 1 colors */
+ 
+.color-1 { stroke: #dea521; }
+.color-2 { stroke: #f84242; }
+.color-3 { stroke: #3758a7; }
+.color-4 { stroke: #f79c8c; }
+.color-5 { stroke: #84b5bd; }
+.color-6 { stroke: #feefde; }       
+	</style>
+</head>
+<body>
+<svg width="320" height="180" viewBox="0 0 320 180" class="letters letters--effect-1">
+  <!--W-->
+  <g class="letter letter--1">
+    <g class="letter__part">
+      <path class="letter__layer color-6" d="M25,39.7l22.4,51l7.9-32.2L76.2,84l1.3-61.2" />
+      <path class="letter__layer color-1" d="M25,39.7l22.4,51l7.9-32.2L76.2,84l1.3-61.2" />
+      <path class="letter__layer color-2" d="M25,39.7l22.4,51l7.9-32.2L76.2,84l1.3-61.2" />
+    </g>
+  </g>
+  <!--I-->
+  <g class="letter letter--2">
+    <g class="letter__part">
+      <path class="letter__layer color-6" d="M100,20.3l8.4,58.4" />
+      <path class="letter__layer color-2" d="M100,20.3l8.4,58.4" />
+      <path class="letter__layer color-3" d="M100,20.3l8.4,58.4" />
+    </g>
+  </g>
+  <!--L-->
+  <g class="letter letter--3">
+    <g class="letter__part">
+      <path class="letter__layer color-6" d="M126.4,70.8l27.6,0.5" />
+      <path class="letter__layer color-3" d="M126.4,70.8l27.6,0.5" />
+      <path class="letter__layer color-4" d="M126.4,70.8l27.6,0.5" />
+    </g>
+    <g class="letter__part">
+      <path class="letter__layer color-6" d="M128.9,15.6l-2.3,60.2" />
+      <path class="letter__layer color-3" d="M128.9,15.6l-2.3,60.2" />
+      <path class="letter__layer color-4" d="M128.9,15.6l-2.3,60.2" />
+    </g>
+  </g>
+  <!-- ...and so on -->
+</svg>	
+<script src="//cdn.bootcss.com/animejs/1.0.0/anime.min.js"></script>
+<script>
+Phrase.prototype.options = {
+  outAnimation: {
+    translateY: [0, 15],
+    opacity: [1, 0],
+    duration: 250,
+    easing: 'easeInOutQuad'
+  },
+  // The animation settings for the ´in´ animation (when the letters appear again).
+  inAnimation: {
+    properties: {
+      translateY: {
+        value: [-30, 0],
+        duration: 900,
+        elasticity: 600,
+        easing: 'easeOutElastic'
+      },
+      opacity: {
+        value: [0, 1],
+        duration: 500,
+        easing: 'linear'
+      },
+    },
+    delay: 40 // delay increment per letter.
+  },
+  // Stroke animation settings
+  pathAnimation: {
+    duration: 800,
+    easing: 'easeOutQuint',
+    delay: 200 // delay increment per path.
+  }
+};
+</script>
+</body>
+</html>			

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	width="100px" height="100px" viewBox="0.5 100.5 100 100" style="enable-background:new 0.5 100.5 100 100;" xml:space="preserve"
+	>
+	<defs>
+			<path id="init" fill="gray" d="M66.073,148.184l-28.615-15.936c-2.085-1.271-4.135-0.246-4.135,2.281v31.941c0,2.524,2.05,3.557,4.135,2.276l28.567-15.699 C68.677,151.539,67.711,149.105,66.073,148.184z"/>
+		<path id="pause" d="M39.979,125.25c-3.489,0-6.313,2.827-6.313,6.313v37.875c0,3.49,2.823,6.313,6.313,6.313c3.49,0,6.313-2.821,6.313-6.313 v-37.875C46.292,128.077,43.469,125.25,39.979,125.25z M61.021,125.25c-3.484,0-6.313,2.827-6.313,6.313v37.875 c0,3.49,2.828,6.313,6.313,6.313c3.484,0,6.313-2.821,6.313-6.313v-37.875C67.333,128.077,64.506,125.25,61.021,125.25z"/>
+		<g id="play">
+			<path fill="red" d="M66.073,148.184l-28.615-15.936c-2.085-1.271-4.135-0.246-4.135,2.281v31.941c0,2.524,2.05,3.557,4.135,2.276l28.567-15.699 C68.677,151.539,67.711,149.105,66.073,148.184z"/>
+		<circle style="fill:#FF0000;" cx="0" cy="0" r="8.5">
+			<animateMotion dur="2s" fill="freeze" repeatDur="indefinite" begin="0s">
+				<mpath xlink:href="#cir"></mpath>
+			</animateMotion>
+		</circle>
+		</g>
+		</defs>
+		<path id="cir" style="fill:none;stroke:#C1C1C1;stroke-width:10;stroke-miterlimit:10;" d="M50.5,105.501c-24.852,0-45,20.146-45,44.997
+			c0,24.855,20.148,45,45,45c24.854,0,45-20.145,45-45C95.5,125.65,75.354,105.501,50.5,105.501z"/>
+		<use id="action" xlink:href="#init"></use>
+		<script>
+			var action = document.getElementById("action");
+			action.addEventListener("click",play,false);
+			function play(){
+				if(this.getAttribute("xlink:href") == "#init" || this.getAttribute("xlink:href") == "#pause"){
+						this.setAttribute("xlink:href","#play");	
+				}else if(this.getAttribute("xlink:href") == "#play"){
+						this.setAttribute("xlink:href","#pause");	
+				}
+			};
+		</script>
+		</svg>
