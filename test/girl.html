@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title></title>
+	</head>
+	<body>
+	<script>
+		var path = document.getElementsByTagName("path");
+		var old = [];
+		for(var i = 0;i < path.length;i++){
+			old.push(path[i].getAttribute("fill"));	
+		}
+
+		for(var j = 0;j < path.length;j++){
+			path[j].setAttribute("fill","none");
+			path[j].setAttribute("stroke","black");
+			path[j].setAttribute("stroke-width","0.5");
+		}
+	</script>
+	<script src="//cdn.bootcss.com/vivus/0.4.0/vivus.min.js"></script>
+	<script>
+		new Vivus("svg1",{type:"oneByOne",duration:500},myCallBack);
+		function myCallBack(){
+		var k = 0;
+		var Anmate = setInterval(fillIn,200);
+		function fillIn(){
+				if(k>path.length-2){
+						clearInterval(Anmate);
+						console.log("stop");
+				}
+				path[k].setAttribute("fill",old[k]);
+				k+=1;
+			}
+		};
+	</script>
+	</body>
+	</html>
+
