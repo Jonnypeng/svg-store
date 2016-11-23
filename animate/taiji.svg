@@ -1,17 +1,56 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="&#x56FE;&#x5C42;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" width="300px" height="300px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
-<ellipse style="fill:none;stroke:#000000;stroke-miterlimit:10;" cx="143.875" cy="36" rx="13.75" ry="18.5"/>
-<ellipse style="fill:none;stroke:#000000;stroke-miterlimit:10;" cx="143.875" cy="105" rx="17" ry="45.5"/>
-<line style="fill:none;stroke:#000000;stroke-miterlimit:10;" x1="143.875" y1="54.5" x2="143.875" y2="59.5"/>
-<polyline id="left" style="fill:none;stroke:#000000;stroke-miterlimit:10;" points="131.388,74.128 108,90.333 72.5,102 " >
-	<animate attributeName="points" attributeType="XML" begin="0s" dur="3s" values="131.388,74.128 108,90.333 72.5,102;131.388,74.128 108,90.333 103,50.75;131.388,74.128 108,90.333 105.5,123.25;131.388,74.128 108,90.333 72.5,102" fill="freeze"></animate>		
-</polyline>
-<polyline id="right" style="fill:none;stroke:#000000;stroke-miterlimit:10;" points="156.363,74.128 186.25,88.064 216.25,94 ">
-	<animate attributeName="points" attributeType="XML" begin="0s" dur="3s" values="156.363,74.128 186.25,88.064 216.25,94;156.363,74.128 186.25,88.064 175.5,131.25;156.363,74.128 186.25,88.064 199.5,54.5;156.363,74.128 186.25,88.064 216.25,94" fill="freeze"></animate>		
-</polyline>
-<polyline style="fill:none;stroke:#000000;stroke-miterlimit:10;" points="142.667,150.5 115.667,186.833 107,244 "/>
-<polyline style="fill:none;stroke:#000000;stroke-miterlimit:10;" points="146.393,150 181.001,187.667 195.667,244 "/>
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="700px" height="700px" viewBox="0 0 700 700" enable-background="new 0 0 700 700" xml:space="preserve">
+<g id="men">
+	
+		<animateMotion  calcMode="paced" accumulate="none" additive="replace" restart="always" dur="18s" repeatDur="indefinite" rotate="auto" begin="0s" fill="freeze">
+		<mpath  xlink:href="#cir"></mpath>
+	</animateMotion>
+	<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="143.875" cy="36" rx="13.75" ry="18.5"/>
+	<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="143.875" cy="105" rx="17" ry="45.5"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="143.875" y1="54.5" x2="143.875" y2="59.5"/>
+	<polyline id="left" fill="none" stroke="#000000" stroke-miterlimit="10" points="131.388,74.128 108,90.333 72.5,102 	">
+	
+		<animate  values="131.388,74.128 108,90.333 72.5,102;131.388,74.128 108,90.333 103,50.75;131.388,74.128 108,90.333 105.5,123.25;131.388,74.128 108,90.333 72.5,102" attributeType="XML" attributeName="points" calcMode="linear" accumulate="none" additive="replace" restart="always" dur="3s" repeatDur="indefinite" begin="0s" fill="freeze">
+		</animate>
+	</polyline>
+	<polyline id="right" fill="none" stroke="#000000" stroke-miterlimit="10" points="156.363,74.128 186.25,88.064 216.25,94 	">
+	
+		<animate  values="156.363,74.128 186.25,88.064 216.25,94;156.363,74.128 186.25,88.064 175.5,131.25;156.363,74.128 186.25,88.064 199.5,54.5;156.363,74.128 186.25,88.064 216.25,94" attributeType="XML" attributeName="points" calcMode="linear" accumulate="none" additive="replace" restart="always" dur="3s" repeatDur="indefinite" begin="0s" fill="freeze">
+		</animate>
+	</polyline>
+	<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="142.667,150.5 115.667,186.833 107,244 	">
+	
+		<animate  values="142.667,150.5 115.667,186.833 107,244;142.667,150.5 115.667,186.833 156.363,244;142.667,150.5 115.667,186.833 107,244" attributeType="XML" attributeName="points" calcMode="linear" accumulate="none" additive="replace" restart="always" dur="3s" repeatDur="indefinite" begin="0s" fill="freeze">
+		</animate>
+	</polyline>
+	<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="146.393,150 181.001,187.667 195.667,244 	">
+	
+		<animate  values="146.393,150 181.001,187.667 195.667,244;146.393,150 181.001,187.667 126.875,244;146.393,150 181.001,187.667 195.667,244" attributeType="XML" attributeName="points" calcMode="linear" accumulate="none" additive="replace" restart="always" dur="3s" repeatDur="indefinite" begin="0s" fill="freeze">
+		</animate>
+	</polyline>
+</g>
+<g id="svg_1">
+	<animateTransform begin="0s" dur="18s" attributeName="transform" type="rotate" from="0,356,248" to="-360,356,248" fill="freeze" repeatDur="indefinite"></animateTransform>
+	<path d="M427.421,177.114c-18.777-19-43.811-29.649-70.485-29.988c-0.032,0-0.063,0-0.096,0
+		c-0.083,0-0.163,0.009-0.245,0.012c-0.32-0.006-0.641-0.012-0.962-0.012c-0.516,0-1.03,0.007-1.543,0.021
+		c-26.616,0.4-51.583,11.069-70.307,30.047c-18.756,19.011-29.085,44.178-29.085,70.866c0,26.72,10.352,51.909,29.147,70.927
+		c18.778,19,43.81,29.65,70.487,29.988c0.031,0,0.062,0,0.095,0c0.083,0,0.163-0.009,0.245-0.012c0.32,0.005,0.64,0.012,0.961,0.012
+		c0.517,0,1.032-0.006,1.546-0.021c26.615-0.4,51.581-11.07,70.304-30.048c18.756-19.011,29.086-44.178,29.086-70.866
+		C456.568,221.32,446.217,196.132,427.421,177.114L427.421,177.114z M355.633,310.413c-8.607,0-15.593-6.986-15.593-15.593
+		c0-8.608,6.985-15.594,15.593-15.594s15.593,6.986,15.593,15.594C371.226,303.427,364.24,310.413,355.633,310.413z
+		 M355.633,240.664c-29.861,0-54.156,24.294-54.156,54.157c0,0.003,0,0.006,0,0.009s0,0.006,0,0.009
+		c0,0.043,0.002,0.085,0.002,0.128c0.001,0.45,0.007,0.899,0.019,1.348c0.006,0.233,0.018,0.464,0.027,0.696
+		c0.01,0.254,0.019,0.508,0.033,0.761c0.015,0.289,0.035,0.577,0.055,0.865c0.013,0.183,0.025,0.366,0.04,0.548
+		c0.026,0.338,0.057,0.675,0.09,1.012c0.01,0.107,0.022,0.215,0.033,0.322c0.685,6.583,2.551,12.92,5.503,18.748
+		c-22.795-15.569-37.828-41.76-37.828-71.208c0-46.83,38.087-85.482,84.904-86.161c0.035,0,0.071-0.001,0.107-0.002
+		c0.388-0.011,0.778-0.017,1.169-0.017c3.365,0,6.633,0.425,9.754,1.223c16.35,4.236,28.717,18.86,29.599,36.178
+		c0.033,0.659,0.05,1.323,0.05,1.991C395.029,222.993,377.356,240.664,355.633,240.664L355.633,240.664z"/>
+	<path id="svg_3" d="M355.633,185.689c-8.607,0-15.593,6.985-15.593,15.592c0,8.607,6.985,15.593,15.593,15.593
+		s15.593-6.986,15.593-15.593C371.226,192.674,364.24,185.689,355.633,185.689z"/>
+</g>
+<path id="cir" fill="none" d="M471.633,247c0,64.065-51.935,116-116,116c-64.065,0-116-51.936-116-116s51.935-116,116-116
+	C419.698,131,471.633,182.935,471.633,247z"/>
 </svg>
