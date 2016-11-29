@@ -68,7 +68,9 @@
        dur="1s"
        repeatDur="indefinite"
        rotate="auto"><mpath
-         xlink:href="#PathRight" /></animateMotion></path><path
+         xlink:href="#PathRight" /></animateMotion>
+         <animate attributeName="fill-opacity" animateType="XML" begin="6s" dur="1s" from="0" to="1" repeatDur="indefinite"></animate>
+       </path><path
      inkscape:connector-curvature="0"
      id="minHeartLeft"
      style="fill:#ed1c24"
@@ -80,7 +82,9 @@
        dur="1s"
        repeatDur="indefinite"
        rotate="auto"><mpath
-         xlink:href="#PathLeft" /></animateMotion></path><path
+         xlink:href="#PathLeft" /></animateMotion>
+         <animate attributeName="fill-opacity" animateType="XML" begin="6s" dur="1s" from="0" to="1" repeatDur="indefinite"></animate>
+       </path><path
      style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 239.23697,238.42444 c 3.16077,-51.77898 7.20996,-103.03861 108.30369,-97.57018"
      id="PathLeft"
